@@ -1,0 +1,19 @@
+﻿<Window x:Class="ProjetWPF.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetWPF"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/chalet_1.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <DataGrid x:Name="dtGridRes" HorizontalAlignment="Left" Height="180" Margin="245,97,0,0" VerticalAlignment="Top" Width="313"/>
+        <Button x:Name="btnReserv" Content="Réservation" HorizontalAlignment="Left" Margin="361,317,0,0" VerticalAlignment="Top" Width="76" Click="btnReserv_Click" />
+        <Button x:Name="btnModif" Content="Modification" HorizontalAlignment="Left" Margin="280,317,0,0" VerticalAlignment="Top" Width="76" Click="btnModif_Click" />
+        <Button x:Name="btnAnnul" Content="Annulation" HorizontalAlignment="Left" Margin="442,317,0,0" VerticalAlignment="Top" Width="76" Click="btnAnnul_Click" />
+
+    </Grid>
+</Window>

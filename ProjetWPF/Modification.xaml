@@ -1,0 +1,35 @@
+﻿<Window x:Class="ProjetWPF.Modification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetWPF"
+        mc:Ignorable="d"
+        Title="Modification" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="modif.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <Label Content="N° de réservation :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="239,45,0,0"/>
+        <ComboBox x:Name="comboBoxIdRes" HorizontalAlignment="Left" Margin="382,45,0,0" VerticalAlignment="Top" Width="149" Height="26" SelectionChanged="comboBoxIdRes_SelectionChanged"/>
+
+        <Label Content="Date d'arrivée :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="239,105,0,0"/>
+        <DatePicker x:Name="datePickerArriver" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,105,0,0" Height="26"/>
+        <Label Content="Durée :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="239,136,0,0"/>
+        <TextBox x:Name="textBoxDuree" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Margin="382,136,0,0"/>
+        <Button x:Name="btnConfirm" Content="Confirmer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="382,167,0,0" Height="28" Click="btnConfirm_Click" />
+
+        <Label Content="Hebergement :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="239,210,0,0"/>
+        <ComboBox x:Name="comboBoxHebergement" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="382,210,0,0" Height="26"/>
+        <Button x:Name="btnAjoutHebergement" Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="382,241,0,0" Height="28" Click="btnAjoutHebergement_Click"/>
+        <ComboBox x:Name="comboBoxHebergementChoix" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="536,210,0,0" Height="26"/>
+        <Button x:Name="btnSupprHebergement" Content="Supprimer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="536,241,0,0" Height="28" Click="btnSupprHebergement_Click"/>
+
+        <Label Content="Nom de la personne :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="239,302,0,0"/>
+        <TextBox x:Name="textBoxNomPersonne" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Margin="382,302,0,0"/>
+
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Margin="459,353,0,0" Click="btnUpdate_Click" />
+        <Button x:Name="btnAnnuler" Content="Annuler" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Margin="382,353,0,0" Click="btnAnnuler_Click"/>
+    </Grid>
+</Window>
